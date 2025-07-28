@@ -34,7 +34,7 @@ func testGitHubProvider(hostname string, opts options.GitHubOptions) *GitHubProv
 
 func testGitHubBackend(payloads map[string][]string) *httptest.Server {
 	pathToQueryMap := map[string][]string{
-		"/":                                {""},
+		"/":                            {""},
 		"/repos/mjording/oauth2-proxy": {""},
 		"/repos/mjording/oauth2-proxy/collaborators/mbland": {""},
 		"/user":        {""},
@@ -300,7 +300,7 @@ func TestGitHubProvider_checkRestrictionsTeam(t *testing.T) {
 func TestGitHubProvider_getEmailWithWriteAccessToPublicRepo(t *testing.T) {
 	b := testGitHubBackend(map[string][]string{
 		"/repo/mjording/oauth2-proxy": {`{"permissions": {"pull": true, "push": true}, "private": false}`},
-		"/user/emails":                    {`[ {"email": "michael.bland@gsa.gov", "verified": true, "primary": true} ]`},
+		"/user/emails":                {`[ {"email": "michael.bland@gsa.gov", "verified": true, "primary": true} ]`},
 	})
 	defer b.Close()
 
@@ -321,7 +321,7 @@ func TestGitHubProvider_getEmailWithWriteAccessToPublicRepo(t *testing.T) {
 func TestGitHubProvider_getEmailWithReadOnlyAccessToPrivateRepo(t *testing.T) {
 	b := testGitHubBackend(map[string][]string{
 		"/repo/mjording/oauth2-proxy": {`{"permissions": {"pull": true, "push": false}, "private": true}`},
-		"/user/emails":                    {`[ {"email": "michael.bland@gsa.gov", "verified": true, "primary": true} ]`},
+		"/user/emails":                {`[ {"email": "michael.bland@gsa.gov", "verified": true, "primary": true} ]`},
 	})
 	defer b.Close()
 
@@ -342,7 +342,7 @@ func TestGitHubProvider_getEmailWithReadOnlyAccessToPrivateRepo(t *testing.T) {
 func TestGitHubProvider_getEmailWithWriteAccessToPrivateRepo(t *testing.T) {
 	b := testGitHubBackend(map[string][]string{
 		"/repo/mjording/oauth2-proxy": {`{"permissions": {"pull": true, "push": true}, "private": true}`},
-		"/user/emails":                    {`[ {"email": "michael.bland@gsa.gov", "verified": true, "primary": true} ]`},
+		"/user/emails":                {`[ {"email": "michael.bland@gsa.gov", "verified": true, "primary": true} ]`},
 	})
 	defer b.Close()
 
@@ -553,8 +553,8 @@ func TestGitHubProvider_getEmailWithUsernameAndNotBelongToOrg(t *testing.T) {
 
 func TestGitHubProvider_getEmailWithUsernameAndNoAccessToPrivateRepo(t *testing.T) {
 	b := testGitHubBackend(map[string][]string{
-		"/user":                           {`{"email": "michael.bland@gsa.gov", "login": "mbland"}`},
-		"/user/emails":                    {`[ {"email": "michael.bland@gsa.gov", "verified": true, "primary": true} ]`},
+		"/user":                       {`{"email": "michael.bland@gsa.gov", "login": "mbland"}`},
+		"/user/emails":                {`[ {"email": "michael.bland@gsa.gov", "verified": true, "primary": true} ]`},
 		"/repo/mjording/oauth2-proxy": {`{}`},
 	})
 	defer b.Close()
