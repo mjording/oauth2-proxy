@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/options"
+	"github.com/mjording/oauth2-proxy/v7/pkg/apis/options"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -34,8 +34,8 @@ func testGiteaProvider(hostname string, opts options.GitHubOptions) *GitHubProvi
 
 func testGiteaBackend(payloads map[string][]string) *httptest.Server {
 	pathToQueryMap := map[string][]string{
-		"/api/v1/repos/oauth2-proxy/oauth2-proxy":                      {""},
-		"/api/v1/repos/oauth2-proxy/oauth2-proxy/collaborators/mbland": {""},
+		"/api/v1/repos/mjording/oauth2-proxy":                      {""},
+		"/api/v1/repos/mjording/oauth2-proxy/collaborators/mbland": {""},
 		"/api/v1/user":        {""},
 		"/api/v1/user/emails": {""},
 		"/api/v1/user/orgs":   {"page=1&per_page=100", "page=2&per_page=100", "page=3&per_page=100"},

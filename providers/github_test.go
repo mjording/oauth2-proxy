@@ -7,8 +7,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/options"
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/sessions"
+	"github.com/mjording/oauth2-proxy/v7/pkg/apis/options"
+	"github.com/mjording/oauth2-proxy/v7/pkg/apis/sessions"
 	. "github.com/onsi/gomega"
 	"github.com/stretchr/testify/assert"
 )
@@ -35,8 +35,8 @@ func testGitHubProvider(hostname string, opts options.GitHubOptions) *GitHubProv
 func testGitHubBackend(payloads map[string][]string) *httptest.Server {
 	pathToQueryMap := map[string][]string{
 		"/":                                {""},
-		"/repos/oauth2-proxy/oauth2-proxy": {""},
-		"/repos/oauth2-proxy/oauth2-proxy/collaborators/mbland": {""},
+		"/repos/mjording/oauth2-proxy": {""},
+		"/repos/mjording/oauth2-proxy/collaborators/mbland": {""},
 		"/user":        {""},
 		"/user/emails": {""},
 		"/user/teams":  {"page=1&per_page=100", "page=2&per_page=100", "page=3&per_page=100"},
@@ -299,7 +299,7 @@ func TestGitHubProvider_checkRestrictionsTeam(t *testing.T) {
 
 func TestGitHubProvider_getEmailWithWriteAccessToPublicRepo(t *testing.T) {
 	b := testGitHubBackend(map[string][]string{
-		"/repo/oauth2-proxy/oauth2-proxy": {`{"permissions": {"pull": true, "push": true}, "private": false}`},
+		"/repo/mjording/oauth2-proxy": {`{"permissions": {"pull": true, "push": true}, "private": false}`},
 		"/user/emails":                    {`[ {"email": "michael.bland@gsa.gov", "verified": true, "primary": true} ]`},
 	})
 	defer b.Close()
@@ -307,7 +307,7 @@ func TestGitHubProvider_getEmailWithWriteAccessToPublicRepo(t *testing.T) {
 	bURL, _ := url.Parse(b.URL)
 	p := testGitHubProvider(bURL.Host,
 		options.GitHubOptions{
-			Repo:  "oauth2-proxy/oauth2-proxy",
+			Repo:  "mjording/oauth2-proxy",
 			Token: "token",
 		},
 	)
@@ -320,7 +320,7 @@ func TestGitHubProvider_getEmailWithWriteAccessToPublicRepo(t *testing.T) {
 
 func TestGitHubProvider_getEmailWithReadOnlyAccessToPrivateRepo(t *testing.T) {
 	b := testGitHubBackend(map[string][]string{
-		"/repo/oauth2-proxy/oauth2-proxy": {`{"permissions": {"pull": true, "push": false}, "private": true}`},
+		"/repo/mjording/oauth2-proxy": {`{"permissions": {"pull": true, "push": false}, "private": true}`},
 		"/user/emails":                    {`[ {"email": "michael.bland@gsa.gov", "verified": true, "primary": true} ]`},
 	})
 	defer b.Close()
@@ -328,7 +328,7 @@ func TestGitHubProvider_getEmailWithReadOnlyAccessToPrivateRepo(t *testing.T) {
 	bURL, _ := url.Parse(b.URL)
 	p := testGitHubProvider(bURL.Host,
 		options.GitHubOptions{
-			Repo:  "oauth2-proxy/oauth2-proxy",
+			Repo:  "mjording/oauth2-proxy",
 			Token: "token",
 		},
 	)
@@ -341,7 +341,7 @@ func TestGitHubProvider_getEmailWithReadOnlyAccessToPrivateRepo(t *testing.T) {
 
 func TestGitHubProvider_getEmailWithWriteAccessToPrivateRepo(t *testing.T) {
 	b := testGitHubBackend(map[string][]string{
-		"/repo/oauth2-proxy/oauth2-proxy": {`{"permissions": {"pull": true, "push": true}, "private": true}`},
+		"/repo/mjording/oauth2-proxy": {`{"permissions": {"pull": true, "push": true}, "private": true}`},
 		"/user/emails":                    {`[ {"email": "michael.bland@gsa.gov", "verified": true, "primary": true} ]`},
 	})
 	defer b.Close()
@@ -349,7 +349,7 @@ func TestGitHubProvider_getEmailWithWriteAccessToPrivateRepo(t *testing.T) {
 	bURL, _ := url.Parse(b.URL)
 	p := testGitHubProvider(bURL.Host,
 		options.GitHubOptions{
-			Repo:  "oauth2-proxy/oauth2-proxy",
+			Repo:  "mjording/oauth2-proxy",
 			Token: "token",
 		},
 	)
@@ -362,14 +362,14 @@ func TestGitHubProvider_getEmailWithWriteAccessToPrivateRepo(t *testing.T) {
 
 func TestGitHubProvider_checkRestrictionsWithNoAccessToPrivateRepo(t *testing.T) {
 	b := testGitHubBackend(map[string][]string{
-		"/repos/oauth2-proxy/oauth2-proxy": {`{}`},
+		"/repos/mjording/oauth2-proxy": {`{}`},
 	})
 	defer b.Close()
 
 	bURL, _ := url.Parse(b.URL)
 	p := testGitHubProvider(bURL.Host,
 		options.GitHubOptions{
-			Repo: "oauth2-proxy/oauth2-proxy",
+			Repo: "mjording/oauth2-proxy",
 		},
 	)
 
@@ -388,7 +388,7 @@ func TestGitHubProvider_getEmailWithToken(t *testing.T) {
 	bURL, _ := url.Parse(b.URL)
 	p := testGitHubProvider(bURL.Host,
 		options.GitHubOptions{
-			Repo:  "oauth2-proxy/oauth2-proxy",
+			Repo:  "mjording/oauth2-proxy",
 			Token: "token",
 		},
 	)
@@ -450,14 +450,14 @@ func TestGitHubProvider_getUser(t *testing.T) {
 func TestGitHubProvider_getUserWithRepoAndToken(t *testing.T) {
 	b := testGitHubBackend(map[string][]string{
 		"/user": {`{"email": "michael.bland@gsa.gov", "login": "mbland"}`},
-		"/repos/oauth2-proxy/oauth2-proxy/collaborators/mbland": {""},
+		"/repos/mjording/oauth2-proxy/collaborators/mbland": {""},
 	})
 	defer b.Close()
 
 	bURL, _ := url.Parse(b.URL)
 	p := testGitHubProvider(bURL.Host,
 		options.GitHubOptions{
-			Repo:  "oauth2-proxy/oauth2-proxy",
+			Repo:  "mjording/oauth2-proxy",
 			Token: "token",
 		},
 	)
@@ -475,7 +475,7 @@ func TestGitHubProvider_getUserWithRepoAndTokenWithoutPushAccess(t *testing.T) {
 	bURL, _ := url.Parse(b.URL)
 	p := testGitHubProvider(bURL.Host,
 		options.GitHubOptions{
-			Repo:  "oauth2-proxy/oauth2-proxy",
+			Repo:  "mjording/oauth2-proxy",
 			Token: "token",
 		},
 	)
@@ -555,14 +555,14 @@ func TestGitHubProvider_getEmailWithUsernameAndNoAccessToPrivateRepo(t *testing.
 	b := testGitHubBackend(map[string][]string{
 		"/user":                           {`{"email": "michael.bland@gsa.gov", "login": "mbland"}`},
 		"/user/emails":                    {`[ {"email": "michael.bland@gsa.gov", "verified": true, "primary": true} ]`},
-		"/repo/oauth2-proxy/oauth2-proxy": {`{}`},
+		"/repo/mjording/oauth2-proxy": {`{}`},
 	})
 	defer b.Close()
 
 	bURL, _ := url.Parse(b.URL)
 	p := testGitHubProvider(bURL.Host,
 		options.GitHubOptions{
-			Repo:  "oauth2-proxy/oauth2-proxy",
+			Repo:  "mjording/oauth2-proxy",
 			Token: "token",
 			Users: []string{"mbland"},
 		},

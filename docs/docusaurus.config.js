@@ -45,7 +45,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/oauth2-proxy/oauth2-proxy/edit/master/docs/',
+            'https://github.com/mjording/oauth2-proxy/edit/master/docs/',
         },
         blog: false,
         theme: {
@@ -110,7 +110,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/oauth2-proxy/oauth2-proxy',
+            href: 'https://github.com/mjording/oauth2-proxy',
             label: 'GitHub',
             position: 'right',
           },

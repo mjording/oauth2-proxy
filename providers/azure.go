@@ -12,11 +12,11 @@ import (
 
 	"github.com/bitly/go-simplejson"
 
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/options"
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/sessions"
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/logger"
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/requests"
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/util"
+	"github.com/mjording/oauth2-proxy/v7/pkg/apis/options"
+	"github.com/mjording/oauth2-proxy/v7/pkg/apis/sessions"
+	"github.com/mjording/oauth2-proxy/v7/pkg/logger"
+	"github.com/mjording/oauth2-proxy/v7/pkg/requests"
+	"github.com/mjording/oauth2-proxy/v7/pkg/util"
 )
 
 // AzureProvider represents an Azure based Identity Provider
@@ -258,7 +258,7 @@ func (p *AzureProvider) extractClaimsIntoSession(ctx context.Context, session *s
 		return fmt.Errorf("unable to verify token: %v", err)
 	}
 
-	// https://github.com/oauth2-proxy/oauth2-proxy/pull/914#issuecomment-782285814
+	// https://github.com/mjording/oauth2-proxy/pull/914#issuecomment-782285814
 	// https://github.com/AzureAD/azure-activedirectory-library-for-java/issues/117
 	// due to above issues, id_token may not be signed by AAD
 	// in that case, we will fallback to access token

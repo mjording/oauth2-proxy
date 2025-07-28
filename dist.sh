@@ -34,11 +34,11 @@ for ARCH in "${ARCHS[@]}"; do
 	if [[ ${GO_ARCH} == armv* ]]; then
 	  GO_ARM=$(echo $GO_ARCH | awk -Fv '{print $2}')
 		GO111MODULE=on GOOS=${GO_OS} GOARCH=arm GOARM=${GO_ARM} CGO_ENABLED=0 go build \
-			-ldflags="-X github.com/oauth2-proxy/oauth2-proxy/v7/pkg/version.VERSION=${VERSION}" \
+			-ldflags="-X github.com/mjording/oauth2-proxy/v7/pkg/version.VERSION=${VERSION}" \
 			-o release/${BINARY}-${VERSION}.${ARCH}/${BINARY} .
 	else
 		GO111MODULE=on GOOS=${GO_OS} GOARCH=${GO_ARCH} CGO_ENABLED=0 go build \
-			-ldflags="-X github.com/oauth2-proxy/oauth2-proxy/v7/pkg/version.VERSION=${VERSION}" \
+			-ldflags="-X github.com/mjording/oauth2-proxy/v7/pkg/version.VERSION=${VERSION}" \
 			-o release/${BINARY}-${VERSION}.${ARCH}/${BINARY} .
 	fi
 

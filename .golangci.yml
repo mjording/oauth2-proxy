@@ -44,7 +44,7 @@ linters:
           - revive
           - staticcheck
         path: tests/.*_tests\.go
-      # See https://github.com/oauth2-proxy/oauth2-proxy/issues/3060
+      # See https://github.com/mjording/oauth2-proxy/issues/3060
       # https://staticcheck.dev/docs/checks/#QF1008
       - linters:
           - staticcheck
