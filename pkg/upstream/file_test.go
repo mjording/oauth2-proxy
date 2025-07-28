@@ -7,9 +7,9 @@ import (
 	"net/http/httptest"
 	"os"
 
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/options"
+	"github.com/mjording/oauth2-proxy/v7/pkg/apis/options"
 
-	middlewareapi "github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/middleware"
+	middlewareapi "github.com/mjording/oauth2-proxy/v7/pkg/apis/middleware"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )

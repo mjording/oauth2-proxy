@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/options"
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/sessions"
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/clock"
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/encryption"
+	"github.com/mjording/oauth2-proxy/v7/pkg/apis/options"
+	"github.com/mjording/oauth2-proxy/v7/pkg/apis/sessions"
+	"github.com/mjording/oauth2-proxy/v7/pkg/clock"
+	"github.com/mjording/oauth2-proxy/v7/pkg/encryption"
 	"github.com/vmihailenco/msgpack/v5"
 )
 

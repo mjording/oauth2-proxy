@@ -3,7 +3,7 @@ package requests
 import (
 	"net/http"
 
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/version"
+	"github.com/mjording/oauth2-proxy/v7/pkg/version"
 )
 
 type userAgentTransport struct {

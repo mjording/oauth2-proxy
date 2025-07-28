@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/options"
-	sessionsapi "github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/sessions"
+	"github.com/mjording/oauth2-proxy/v7/pkg/apis/options"
+	sessionsapi "github.com/mjording/oauth2-proxy/v7/pkg/apis/sessions"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )

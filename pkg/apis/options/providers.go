@@ -15,7 +15,7 @@ var OIDCAudienceClaims = []string{"aud"}
 // set in the [`providers` array using
 // AlphaConfig](https://oauth2-proxy.github.io/oauth2-proxy/configuration/alpha-config#providers).
 // However, [**the feature to implement multiple providers is not
-// complete**](https://github.com/oauth2-proxy/oauth2-proxy/issues/926).
+// complete**](https://github.com/mjording/oauth2-proxy/issues/926).
 type Providers []Provider
 
 // Provider holds all configuration for a single provider

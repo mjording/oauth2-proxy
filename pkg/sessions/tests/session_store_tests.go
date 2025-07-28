@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/options"
-	sessionsapi "github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/sessions"
-	cookiesapi "github.com/oauth2-proxy/oauth2-proxy/v7/pkg/cookies"
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/encryption"
+	"github.com/mjording/oauth2-proxy/v7/pkg/apis/options"
+	sessionsapi "github.com/mjording/oauth2-proxy/v7/pkg/apis/sessions"
+	cookiesapi "github.com/mjording/oauth2-proxy/v7/pkg/cookies"
+	"github.com/mjording/oauth2-proxy/v7/pkg/encryption"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )

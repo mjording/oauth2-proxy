@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/justinas/alice"
-	middlewareapi "github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/middleware"
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/logger"
+	middlewareapi "github.com/mjording/oauth2-proxy/v7/pkg/apis/middleware"
+	"github.com/mjording/oauth2-proxy/v7/pkg/logger"
 )
 
 // NewRequestLogger returns middleware which logs requests

@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/version"
+	"github.com/mjording/oauth2-proxy/v7/pkg/version"
 
 	"github.com/bitly/go-simplejson"
 	. "github.com/onsi/ginkgo/v2"

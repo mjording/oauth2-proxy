@@ -43,7 +43,7 @@ type AlphaOptions struct {
 
 	// Providers is used to configure your provider. **Multiple-providers is not
 	// yet working.** [This feature is tracked in
-	// #925](https://github.com/oauth2-proxy/oauth2-proxy/issues/926)
+	// #925](https://github.com/mjording/oauth2-proxy/issues/926)
 	Providers Providers `json:"providers,omitempty"`
 }
 

@@ -5,7 +5,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/clock"
+	"github.com/mjording/oauth2-proxy/v7/pkg/clock"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )

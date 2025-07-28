@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/middleware"
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/requests/util"
+	"github.com/mjording/oauth2-proxy/v7/pkg/apis/middleware"
+	"github.com/mjording/oauth2-proxy/v7/pkg/requests/util"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )

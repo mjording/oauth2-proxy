@@ -7,9 +7,9 @@ import (
 	"regexp"
 
 	"github.com/justinas/alice"
-	middlewareapi "github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/middleware"
-	sessionsapi "github.com/oauth2-proxy/oauth2-proxy/v7/pkg/apis/sessions"
-	"github.com/oauth2-proxy/oauth2-proxy/v7/pkg/logger"
+	middlewareapi "github.com/mjording/oauth2-proxy/v7/pkg/apis/middleware"
+	sessionsapi "github.com/mjording/oauth2-proxy/v7/pkg/apis/sessions"
+	"github.com/mjording/oauth2-proxy/v7/pkg/logger"
 	k8serrors "k8s.io/apimachinery/pkg/util/errors"
 )
 
