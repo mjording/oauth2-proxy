@@ -112,17 +112,16 @@ func (p *DiscordProvider) EnrichSession(ctx context.Context, s *sessions.Session
 	return nil
 }
 
-type discordTokenInfo struct {
-	User struct {
-		ID       string `json:"id"`
-		Username string `json:"username"`
-	} `json:"user"`
+type discordUser struct {
+	ID       string `json:"id"`
+	Username string `json:"username"`
+	Email    string `json:"email"`
 }
 
-// Retrieve current token Info
-// https://discord.com/developers/docs/topics/oauth2#get-current-authorization-information
-func (p *DiscordProvider) getTokenInfo(ctx context.Context, s *sessions.SessionState) (*discordTokenInfo, error) {
-	var tokenInfo discordTokenInfo
+// Retrieve current user Info
+// https://discord.com/developers/docs/resources/user#get-current-user
+func (p *DiscordProvider) getUserInfo(ctx context.Context, s *sessions.SessionState) (*discordUser, error) {
+	var tokenInfo discordUser
 	err := requests.New(discordDefaultProfileURL.String()).
 		WithContext(ctx).
 		SetHeader("Authorization", "Bearer "+s.AccessToken).
