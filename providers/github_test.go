@@ -540,7 +540,7 @@ func TestGitHubProvider_getEmailWithUsernameAndNotBelongToOrg(t *testing.T) {
 	bURL, _ := url.Parse(b.URL)
 	p := testGitHubProvider(bURL.Host,
 		options.GitHubOptions{
-			Org:   "not_belog_to",
+			Org:   "not_belong_to",
 			Users: []string{"mbland"},
 		},
 	)
