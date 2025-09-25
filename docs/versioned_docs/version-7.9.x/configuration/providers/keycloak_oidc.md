@@ -76,7 +76,7 @@ through "dedicated" client mappers._
               to the "Included Client Audience" dropdown. Note that the "aud" claim of a JWT token should be limited and 
               only specify its intended recipients._
         * **Add to ID token** 'On'
-        * **Add to access token** 'On' - [#1916](https://github.com/oauth2-proxy/oauth2-proxy/pull/1916)
+        * **Add to access token** 'On' - [#1916](https://github.com/mjording/oauth2-proxy/pull/1916)
             * _Save the configuration._
 * Any subsequent dedicated client mappers can be defined by clicking **Dedicated scopes** -> **Add mapper** -> 
   **By configuration** -> *Select mapper*

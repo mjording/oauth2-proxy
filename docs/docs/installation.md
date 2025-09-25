@@ -5,11 +5,11 @@ title: Installation
 
 1.  Choose how to deploy:
 
-    a. Using a [Prebuilt Binary](https://github.com/oauth2-proxy/oauth2-proxy/releases) (current release is `v7.12.0`)
+    a. Using a [Prebuilt Binary](https://github.com/mjording/oauth2-proxy/releases) (current release is `v7.12.0`)
 
     b. Using Go to install the latest release
     ```bash
-    $ go install github.com/oauth2-proxy/oauth2-proxy/v7@latest
+    $ go install github.com/mjording/oauth2-proxy/v7@latest
     ```
     This will install the binary into `$GOPATH/bin`. Make sure you include `$GOPATH` in your `$PATH`. Otherwise your system won't find binaries installed via `go install`
 

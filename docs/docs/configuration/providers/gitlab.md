@@ -13,7 +13,7 @@ title: GitLab
 ## Usage
 
 This auth provider has been tested against Gitlab version 12.X. Due to Gitlab API changes, it may not work for version 
-prior to 12.X (see [994](https://github.com/oauth2-proxy/oauth2-proxy/issues/994)).
+prior to 12.X (see [994](https://github.com/mjording/oauth2-proxy/issues/994)).
 
 Whether you are using GitLab.com or self-hosting GitLab, follow 
 [these steps to add an application](https://docs.gitlab.com/integration/oauth_provider/). Make sure to enable at

@@ -1,6 +1,6 @@
-[![Continuous Integration](https://github.com/oauth2-proxy/oauth2-proxy/actions/workflows/ci.yml/badge.svg)](https://github.com/oauth2-proxy/oauth2-proxy/actions/workflows/ci.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/oauth2-proxy/oauth2-proxy)](https://goreportcard.com/report/github.com/oauth2-proxy/oauth2-proxy)
-[![GoDoc](https://godoc.org/github.com/oauth2-proxy/oauth2-proxy?status.svg)](https://godoc.org/github.com/oauth2-proxy/oauth2-proxy)
+[![Continuous Integration](https://github.com/mjording/oauth2-proxy/actions/workflows/ci.yml/badge.svg)](https://github.com/mjording/oauth2-proxy/actions/workflows/ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mjording/oauth2-proxy)](https://goreportcard.com/report/github.com/mjording/oauth2-proxy)
+[![GoDoc](https://godoc.org/github.com/mjording/oauth2-proxy?status.svg)](https://godoc.org/github.com/mjording/oauth2-proxy)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a58ff79407212e2beacb/maintainability)](https://codeclimate.com/github/oauth2-proxy/oauth2-proxy/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a58ff79407212e2beacb/test_coverage)](https://codeclimate.com/github/oauth2-proxy/oauth2-proxy/test_coverage)
@@ -15,14 +15,14 @@ OAuth2-Proxy supports a lot of OAuth2 as well as OIDC providers. Either through 
 
 ## Get Started
 
-OAuth2-Proxy's [Installation Docs](https://oauth2-proxy.github.io/oauth2-proxy/installation) cover how to install and configure your setup. Additionally you can take a further look at the [example setup files](https://github.com/oauth2-proxy/oauth2-proxy/tree/master/contrib/local-environment).
+OAuth2-Proxy's [Installation Docs](https://oauth2-proxy.github.io/oauth2-proxy/installation) cover how to install and configure your setup. Additionally you can take a further look at the [example setup files](https://github.com/mjording/oauth2-proxy/tree/master/contrib/local-environment).
 
 ## Releases
 
 ### Binaries
 We publish oauth2-proxy as compiled binaries on GitHub for all major architectures as well as more exotic ones like `ppc64le` as well as `s390x`.
 
-Check out the [latest release](https://github.com/oauth2-proxy/oauth2-proxy/releases/latest).
+Check out the [latest release](https://github.com/mjording/oauth2-proxy/releases/latest).
 
 ### Images
 
@@ -54,7 +54,7 @@ feel free to open a PR to add your organisation.
 
 Thanks to all the people who already contributed ❤
 
-<a href="https://github.com/oauth2-proxy/oauth2-proxy/graphs/contributors">
+<a href="https://github.com/mjording/oauth2-proxy/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=oauth2-proxy/oauth2-proxy&columns=15&max=75" />
   <img src="https://img.shields.io/github/contributors/oauth2-proxy/oauth2-proxy" />
 </a>
@@ -73,7 +73,7 @@ For more details read our full [Security Docs](https://oauth2-proxy.github.io/oa
 
 If you are running a version older than v6.0.0 we **strongly recommend** to the current version.
 
-See [open redirect vulnerability](https://github.com/oauth2-proxy/oauth2-proxy/security/advisories/GHSA-5m6c-jp6f-2vcv) for details.
+See [open redirect vulnerability](https://github.com/mjording/oauth2-proxy/security/advisories/GHSA-5m6c-jp6f-2vcv) for details.
 
 ## Repository History
 
