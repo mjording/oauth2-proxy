@@ -127,9 +127,9 @@ var _ = Describe("SignIn Page", func() {
 				expectedData: "",
 			}),
 			Entry("with HTTPS URL", loadCustomLogoTableInput{
-				logoPath:     "https://raw.githubusercontent.com/oauth2-proxy/oauth2-proxy/master/docs/static/img/logos/OAuth2_Proxy_icon.png",
+				logoPath:     "https://raw.githubusercontent.com/mjording/oauth2-proxy/master/docs/static/img/logos/OAuth2_Proxy_icon.png",
 				expectedErr:  nil,
-				expectedData: "<img src=\"https://raw.githubusercontent.com/oauth2-proxy/oauth2-proxy/master/docs/static/img/logos/OAuth2_Proxy_icon.png\" alt=\"Logo\" />",
+				expectedData: "<img src=\"https://raw.githubusercontent.com/mjording/oauth2-proxy/master/docs/static/img/logos/OAuth2_Proxy_icon.png\" alt=\"Logo\" />",
 			}),
 			Entry("with an svg custom logo", loadCustomLogoTableInput{
 				logoPath:     "customDir/logo.svg",
