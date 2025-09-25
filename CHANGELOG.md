@@ -6,9 +6,9 @@
 
 ## Breaking Changes
 
-## Changes since v7.13.7
+## Changes since v7.13.8
 
-# V7.13.7
+# V7.13.8
 
 ## Release Highlights
 
