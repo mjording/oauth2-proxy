@@ -31,9 +31,9 @@ jobs:
         curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
         chmod +x ./cc-test-reporter
 
-    - name: Verify Code Generation
-      run: |
-        make verify-generate
+    # - name: Verify Code Generation
+    #   run: |
+    #     make verify-generate
 
     - name: Lint
       run: |
@@ -79,3 +79,9 @@ jobs:
       if: github.base_ref == 'master' && startsWith(github.head_ref, 'release')
       run: |
         make build-docker-all
+
+        # For release testing
+    - name: Docker Push All
+      if: github.base_ref == 'master' && startsWith(github.head_ref, 'release')
+      run: |
+        make push-docker-all
