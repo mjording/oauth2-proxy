@@ -6,9 +6,9 @@
 
 ## Breaking Changes
 
-## Changes since v7.13.8
+## Changes since v7.13.9
 
-# V7.13.8
+# V7.13.9
 
 ## Release Highlights
 
@@ -119,7 +119,7 @@ For detailed information, migration guidance, and security implications, see the
 - 🕵️‍♀️ Vulnerabilities have been addressed
   - [CVE-2025-22871](https://github.com/advisories/GHSA-g9pc-8g42-g6vq)
 - 🐛 Squashed some bugs
-  
+
 ## Important Notes
 
 ## Breaking Changes

@@ -28,7 +28,7 @@ jobs:
     - name: Login to quay.io
       uses: docker/login-action@v3
       with:
-        registry: quay.io/oauth2-proxy
+        registry: quay.io/mjording
         username: ${{ secrets.REGISTRY_USERNAME_NIGHTLY }}
         password: ${{ secrets.REGISTRY_PASSWORD_NIGHTLY }}
 

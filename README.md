@@ -15,7 +15,7 @@ OAuth2-Proxy supports a lot of OAuth2 as well as OIDC providers. Either through 
 
 ## Get Started
 
-OAuth2-Proxy's [Installation Docs](https://oauth2-proxy.github.io/oauth2-proxy/installation) cover how to install and configure your setup. Additionally you can take a further look at the [example setup files](https://github.com/mjording/oauth2-proxy/tree/master/contrib/local-environment).
+OAuth2-Proxy's [Installation Docs](https://mjording.github.io/oauth2-proxy/installation) cover how to install and configure your setup. Additionally you can take a further look at the [example setup files](https://github.com/mjording/oauth2-proxy/tree/master/contrib/local-environment).
 
 ## Releases
 
@@ -47,7 +47,7 @@ Join the #oauth2-proxy [Slack channel](https://gophers.slack.com/archives/CM2RSS
 
 OAuth2-Proxy is a community-driven project. We rely on the contribut️ions of our users to continually improve it. While review times can vary, we appreciate your patience and understanding. As a volunteer-driven project, we strive to keep this project stable and might take longer to merge changes.
 
-If you want to contribute to the project. Please see our [Contributing](https://oauth2-proxy.github.io/oauth2-proxy/community/contribution) guide.
+If you want to contribute to the project. Please see our [Contributing](https://mjording.github.io/oauth2-proxy/community/contribution) guide.
 
 Who uses OAuth2-Proxy? Have a look at our new [ADOPTERS](ADOPTERS.md) file and
 feel free to open a PR to add your organisation.
@@ -67,7 +67,7 @@ If you believe you have found a vulnerability within OAuth2 Proxy or any of its 
 
 Security disclosures **MUST** be done in private. If you have found an issue that you would like to bring to the attention of the maintainers, please compose an email and send it to the list of people listed in our [MAINTAINERS](MAINTAINERS) file.
 
-For more details read our full [Security Docs](https://oauth2-proxy.github.io/oauth2-proxy/community/security#security-disclosures)
+For more details read our full [Security Docs](https://mjording.github.io/oauth2-proxy/community/security#security-disclosures)
 
 ### Security Notice for v6.0.0 and older
 
