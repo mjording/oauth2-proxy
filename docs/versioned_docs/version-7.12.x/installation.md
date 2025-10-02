@@ -5,7 +5,7 @@ title: Installation
 
 1.  Choose how to deploy:
 
-    a. Using a [Prebuilt Binary](https://github.com/mjording/oauth2-proxy/releases) (current release is `v7.13.8`)
+    a. Using a [Prebuilt Binary](https://github.com/mjording/oauth2-proxy/releases) (current release is `v7.13.9`)
 
     b. Using Go to install the latest release
     ```bash
@@ -20,7 +20,7 @@ title: Installation
     e. Using the official [Kubernetes manifest](https://github.com/oauth2-proxy/manifests) (Helm)
 
     Prebuilt binaries can be validated by extracting the file and verifying it against the `sha256sum.txt` checksum file provided for each release starting with version `v3.0.0`.
-    
+
     ```
     $ sha256sum -c sha256sum.txt
     oauth2-proxy-x.y.z.linux-amd64: OK
