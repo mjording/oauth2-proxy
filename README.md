@@ -30,7 +30,7 @@ From `v7.6.0` and up the base image has been changed from Alpine to [GoogleConta
 This image comes with even fewer installed dependencies and thus should improve security. The image therefore is also slightly smaller than Alpine.
 For debugging purposes (and those who really need it. e.g. `armv6`) we still provide images based on Alpine. The tags of these images are suffixed with `-alpine`.
 
-Since 2023-11-18 we build nightly images directly from the `master` branch and provide them at `quay.io/oauth2-proxy/oauth2-proxy-nightly`.
+Since 2023-11-18 we build nightly images directly from the `master` branch and provide them at ` quay.io/mjording/oauth2-proxy-nightly`.
 These images are considered unstable and therefore should **NOT** be used for production purposes unless you know what you're doing.
 
 ## Sponsors
@@ -79,7 +79,7 @@ See [open redirect vulnerability](https://github.com/mjording/oauth2-proxy/secur
 
 **2018-11-27:** This repository was forked from [bitly/OAuth2_Proxy](https://github.com/bitly/oauth2_proxy). Versions v3.0.0 and up are from this fork and will have diverged from any changes in the original fork. A list of changes can be seen in the [CHANGELOG](CHANGELOG.md).
 
-**2020-03-29:** This project was formerly hosted as `pusher/oauth2_proxy` but has been renamed to `oauth2-proxy/oauth2-proxy`. Going forward, all images shall be available at `quay.io/oauth2-proxy/oauth2-proxy` and binaries will be named `oauth2-proxy`.
+**2020-03-29:** This project was formerly hosted as `pusher/oauth2_proxy` but has been renamed to `oauth2-proxy/oauth2-proxy`. Going forward, all images shall be available at ` quay.io/mjording/oauth2-proxy` and binaries will be named `oauth2-proxy`.
 
 ## License
 

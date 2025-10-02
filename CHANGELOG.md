@@ -6,9 +6,9 @@
 
 ## Breaking Changes
 
-## Changes since v7.13.9
+## Changes since v7.13.10
 
-# V7.13.9
+# V7.13.10
 
 ## Release Highlights
 
@@ -997,7 +997,7 @@ N/A
   - Project renamed from `pusher/oauth2_proxy` to `oauth2-proxy`
   - Move Go import path from `github.com/pusher/oauth2_proxy` to `github.com/mjording/oauth2-proxy`
   - Remove Pusher Cloud Team from CODEOWNERS
-  - Release images moved to `quay.io/oauth2-proxy/oauth2-proxy`
+  - Release images moved to ` quay.io/mjording/oauth2-proxy`
   - Binaries renamed from `oauth2_proxy` to `oauth2-proxy`
 - [#432](https://github.com/mjording/oauth2-proxy/pull/432) Update ruby dependencies for documentation (@theobarberbany)
 - [#471](https://github.com/mjording/oauth2-proxy/pull/471) Add logging in case of invalid redirects (@gargath)

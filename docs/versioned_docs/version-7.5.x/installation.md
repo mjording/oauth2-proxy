@@ -14,9 +14,9 @@ slug: /
     ```
     This will install the binary into `$GOPATH/bin`. Make sure you include `$GOPATH` in your `$PATH`. Otherwise your system won't find binaries installed via `go install`
 
-    c. Using a [Prebuilt Docker Image](https://quay.io/oauth2-proxy/oauth2-proxy) (AMD64, PPC64LE, ARMv6, ARMv7, and ARM64 available)
+    c. Using a [Prebuilt Docker Image](https:// quay.io/mjording/oauth2-proxy) (AMD64, PPC64LE, ARMv6, ARMv7, and ARM64 available)
 
-    d. Using a [Pre-Release Nightly Docker Image](https://quay.io/oauth2-proxy/oauth2-proxy-nightly) (AMD64, PPC64LE, ARMv6, ARMv7, and ARM64 available)
+    d. Using a [Pre-Release Nightly Docker Image](https:// quay.io/mjording/oauth2-proxy-nightly) (AMD64, PPC64LE, ARMv6, ARMv7, and ARM64 available)
 
     e. Using the official [Kubernetes manifest](https://github.com/oauth2-proxy/manifests) (Helm)
 
